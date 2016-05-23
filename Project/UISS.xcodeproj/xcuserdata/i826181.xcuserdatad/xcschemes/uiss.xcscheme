@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B1CD28D1CEC382500D7AE9F"
-               BuildableName = "uiss.framework"
-               BlueprintName = "uiss"
+               BlueprintIdentifier = "E1B438AE143F668000F87518"
+               BuildableName = "libUISS.a"
+               BlueprintName = "UISS"
                ReferencedContainer = "container:UISS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B1CD2961CEC382500D7AE9F"
-               BuildableName = "uissTests.xctest"
-               BlueprintName = "uissTests"
-               ReferencedContainer = "container:UISS.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1B1CD28D1CEC382500D7AE9F"
-            BuildableName = "uiss.framework"
-            BlueprintName = "uiss"
-            ReferencedContainer = "container:UISS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1B1CD28D1CEC382500D7AE9F"
-            BuildableName = "uiss.framework"
-            BlueprintName = "uiss"
+            BlueprintIdentifier = "E1B438AE143F668000F87518"
+            BuildableName = "libUISS.a"
+            BlueprintName = "UISS"
             ReferencedContainer = "container:UISS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1B1CD28D1CEC382500D7AE9F"
-            BuildableName = "uiss.framework"
-            BlueprintName = "uiss"
-            ReferencedContainer = "container:UISS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
