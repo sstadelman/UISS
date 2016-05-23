@@ -1,7 +1,7 @@
 //
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
-
+@import UIKit;
 #import "UISSUserInterfaceIdiomPreprocessor.h"
 
 @implementation UISSUserInterfaceIdiomPreprocessor
@@ -15,7 +15,7 @@
     }
 }
 
-- (NSDictionary *)preprocess:(NSDictionary *)dictionary userInterfaceIdiom:(UIUserInterfaceIdiom)userInterfaceIdiom;
+- (NSDictionary *)preprocess:(NSDictionary *)dictionary userInterfaceIdiom:(UIUserInterfaceIdiom)userInterfaceIdiom
 {
     NSMutableDictionary *preprocessed = [NSMutableDictionary dictionary];
     

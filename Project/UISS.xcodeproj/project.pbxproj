@@ -7,22 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; };
-		C8D2B2E56583BF0D585ECFC4 /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; };
+		1B1CD2AD1CEC38C200D7AE9F /* SAPUISS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1CD2AC1CEC38C200D7AE9F /* SAPUISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2B21CEC3AA300D7AE9F /* NSString+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8561584AF820087BB1B /* NSString+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2B31CEC3AA300D7AE9F /* NSString+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8571584AF820087BB1B /* NSString+UISS.m */; };
+		1B1CD2B41CEC3AA300D7AE9F /* NSArray+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E16055361684F90100722458 /* NSArray+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2B51CEC3AA300D7AE9F /* NSArray+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E16055371684F90100722458 /* NSArray+UISS.m */; };
+		1B1CD2B61CEC3AA800D7AE9F /* UISSAppearancePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E123BA1D158A38FA004F8633 /* UISSAppearancePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1B1CD2B71CEC3AB700D7AE9F /* UISSCodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54ED15A81F56005AFD13 /* UISSCodeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2B81CEC3AB700D7AE9F /* UISSCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54EE15A81F56005AFD13 /* UISSCodeGenerator.m */; };
+		1B1CD2B91CEC3ABB00D7AE9F /* UISSError.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C08345158E334E007A88E6 /* UISSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2BA1CEC3AC400D7AE9F /* UISSStatusWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F6E2F2157EC35B00A5187E /* UISSStatusWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2BB1CEC3AC400D7AE9F /* UISSStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F6E2F3157EC35B00A5187E /* UISSStatusWindow.m */; };
+		1B1CD2BC1CEC3AC400D7AE9F /* UISSStatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2BD1CEC3AC400D7AE9F /* UISSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */; };
+		1B1CD2BE1CEC3AC400D7AE9F /* UISSStatusView.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BBEBED1598776C001F7A60 /* UISSStatusView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2BF1CEC3AC400D7AE9F /* UISSStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BBEBEE1598776C001F7A60 /* UISSStatusView.m */; };
+		1B1CD2C01CEC3AC400D7AE9F /* UISSConsoleViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BCCC33157F634B001E4429 /* UISSConsoleViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2C11CEC3AC400D7AE9F /* UISSConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BCCC34157F634B001E4429 /* UISSConsoleViewController.m */; };
+		1B1CD2C21CEC3AC400D7AE9F /* UISSGeneratedCodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C67BD4158CCBD800E220BB /* UISSGeneratedCodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2C31CEC3AC400D7AE9F /* UISSGeneratedCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C67BD5158CCBD800E220BB /* UISSGeneratedCodeViewController.m */; };
+		1B1CD2C41CEC3AC400D7AE9F /* UISSErrorsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E18C7C1D158F52B1000D45AC /* UISSErrorsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2C51CEC3AC400D7AE9F /* UISSErrorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18C7C1E158F52B1000D45AC /* UISSErrorsViewController.m */; };
+		1B1CD2C61CEC3ACA00D7AE9F /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2C71CEC3ACA00D7AE9F /* UISSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */; };
+		1B1CD2C81CEC3ACA00D7AE9F /* UISSSettingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B3AFF5607C8D195A9263 /* UISSSettingDescriptor.m */; };
+		1B1CD2C91CEC3ACA00D7AE9F /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2CA1CEC3ADA00D7AE9F /* UISSPropertySetter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF20157AA24E00BFB3D1 /* UISSPropertySetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2CB1CEC3ADA00D7AE9F /* UISSPropertySetter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF21157AA24E00BFB3D1 /* UISSPropertySetter.m */; };
+		1B1CD2CC1CEC3ADA00D7AE9F /* UISSArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF25157ABBA800BFB3D1 /* UISSArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2CD1CEC3ADA00D7AE9F /* UISSArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF26157ABBA800BFB3D1 /* UISSArgument.m */; };
+		1B1CD2CE1CEC3ADA00D7AE9F /* UISSProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF29157ABBC900BFB3D1 /* UISSProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2CF1CEC3ADA00D7AE9F /* UISSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF2A157ABBC900BFB3D1 /* UISSProperty.m */; };
+		1B1CD2D01CEC3ADA00D7AE9F /* UISSAxisParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF2D157ABBDF00BFB3D1 /* UISSAxisParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2D11CEC3ADA00D7AE9F /* UISSAxisParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF2E157ABBDF00BFB3D1 /* UISSAxisParameter.m */; };
+		1B1CD2D21CEC3ADF00D7AE9F /* UISSDictionaryPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B384E157257C3005BFF73 /* UISSDictionaryPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2D31CEC3ADF00D7AE9F /* UISSVariablesPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775BA1567945D000406CC /* UISSVariablesPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2D41CEC3ADF00D7AE9F /* UISSVariablesPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775BB1567945D000406CC /* UISSVariablesPreprocessor.m */; };
+		1B1CD2D51CEC3ADF00D7AE9F /* UISSUserInterfaceIdiomPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B38491572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2D61CEC3ADF00D7AE9F /* UISSUserInterfaceIdiomPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B384A1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.m */; };
+		1B1CD2D71CEC3ADF00D7AE9F /* UISSDisabledKeysPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E17E43BB159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2D81CEC3ADF00D7AE9F /* UISSDisabledKeysPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E43BC159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.m */; };
+		1B1CD2D91CEC3ADF00D7AE9F /* UISSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469858155A85EC000F311F /* UISSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2DA1CEC3ADF00D7AE9F /* UISSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469859155A85EC000F311F /* UISSParser.m */; };
+		1B1CD2DB1CEC3ADF00D7AE9F /* UISSParserContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54E715A7689D005AFD13 /* UISSParserContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2DC1CEC3ADF00D7AE9F /* UISSParserContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54E815A7689D005AFD13 /* UISSParserContext.m */; };
+		1B1CD2DD1CEC3AE600D7AE9F /* UILabel+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A7739615668F80000406CC /* UILabel+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2DE1CEC3AE600D7AE9F /* UILabel+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A7739715668F80000406CC /* UILabel+UISS.m */; };
+		1B1CD2DF1CEC3AE600D7AE9F /* UIView+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F35EAF1593A3F20074389E /* UIView+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2E01CEC3AE600D7AE9F /* UIView+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F35EB01593A3F20074389E /* UIView+UISS.m */; };
+		1B1CD2E11CEC3AF200D7AE9F /* UISSAbstractEnumValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5EC1563F54800E93185 /* UISSAbstractEnumValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2E21CEC3AF200D7AE9F /* UISSAbstractEnumValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5ED1563F54800E93185 /* UISSAbstractEnumValueConverter.m */; };
+		1B1CD2E31CEC3AF200D7AE9F /* UISSBarMetricsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5DC1563DE5000E93185 /* UISSBarMetricsValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2E41CEC3AF200D7AE9F /* UISSBarMetricsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5DD1563DE5000E93185 /* UISSBarMetricsValueConverter.m */; };
+		1B1CD2E51CEC3AF200D7AE9F /* UISSControlStateValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2E61CEC3AF200D7AE9F /* UISSControlStateValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */; };
+		1B1CD2E71CEC3AF200D7AE9F /* UISSSegmentedControlSegmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2E81CEC3AF200D7AE9F /* UISSSegmentedControlSegmentValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E51563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m */; };
+		1B1CD2E91CEC3AF200D7AE9F /* UISSToolbarPositionValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775B01566E8D6000406CC /* UISSToolbarPositionValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2EA1CEC3AF200D7AE9F /* UISSToolbarPositionValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775B11566E8D6000406CC /* UISSToolbarPositionValueConverter.m */; };
+		1B1CD2EB1CEC3AF200D7AE9F /* UISSSearchBarIconValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2EC1CEC3AF200D7AE9F /* UISSSearchBarIconValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */; };
+		1B1CD2ED1CEC3AF200D7AE9F /* UISSImageResizingModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */; };
+		1B1CD2EE1CEC3AF200D7AE9F /* UISSImageResizingModeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2EF1CEC3AF200D7AE9F /* UISSTextAlignmentValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B46579BB4A74DA7B5D27 /* UISSTextAlignmentValueConverter.m */; };
+		1B1CD2F01CEC3AF200D7AE9F /* UISSTextAlignmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B9582FDA98878B10CBA5 /* UISSTextAlignmentValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2F11CEC3AF800D7AE9F /* UISSColorValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146983E155905FE000F311F /* UISSColorValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2F21CEC3AF800D7AE9F /* UISSColorValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146983F155905FE000F311F /* UISSColorValueConverter.m */; };
+		1B1CD2F31CEC3AF800D7AE9F /* UISSImageValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984C1559B24C000F311F /* UISSImageValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2F41CEC3AF800D7AE9F /* UISSImageValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984D1559B24C000F311F /* UISSImageValueConverter.m */; };
+		1B1CD2F51CEC3AF800D7AE9F /* UISSFontValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984215590709000F311F /* UISSFontValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2F61CEC3AF800D7AE9F /* UISSFontValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984315590709000F311F /* UISSFontValueConverter.m */; };
+		1B1CD2F71CEC3AF800D7AE9F /* UISSTextAttributesValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469850155A6D0E000F311F /* UISSTextAttributesValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2F81CEC3AF800D7AE9F /* UISSTextAttributesValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469851155A6D0E000F311F /* UISSTextAttributesValueConverter.m */; };
+		1B1CD2F91CEC3AFF00D7AE9F /* UISSIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D3155ABE500066CCC3 /* UISSIntegerValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2FA1CEC3AFF00D7AE9F /* UISSIntegerValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D4155ABE500066CCC3 /* UISSIntegerValueConverter.m */; };
+		1B1CD2FB1CEC3AFF00D7AE9F /* UISSUIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F48243156259FE00CFA72E /* UISSUIntegerValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2FC1CEC3AFF00D7AE9F /* UISSUIntegerValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F48244156259FE00CFA72E /* UISSUIntegerValueConverter.m */; };
+		1B1CD2FD1CEC3AFF00D7AE9F /* UISSFloatValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D7155ABE5E0066CCC3 /* UISSFloatValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD2FE1CEC3AFF00D7AE9F /* UISSFloatValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D8155ABE5E0066CCC3 /* UISSFloatValueConverter.m */; };
+		1B1CD2FF1CEC3B0500D7AE9F /* UISSSizeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0AE155A9D410066CCC3 /* UISSSizeValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD3001CEC3B0500D7AE9F /* UISSSizeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0AF155A9D410066CCC3 /* UISSSizeValueConverter.m */; };
+		1B1CD3011CEC3B0500D7AE9F /* UISSRectValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0B2155A9D550066CCC3 /* UISSRectValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD3021CEC3B0500D7AE9F /* UISSRectValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0B3155A9D550066CCC3 /* UISSRectValueConverter.m */; };
+		1B1CD3031CEC3B0500D7AE9F /* UISSEdgeInsetsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0BC155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD3041CEC3B0500D7AE9F /* UISSEdgeInsetsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0BD155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.m */; };
+		1B1CD3051CEC3B0500D7AE9F /* UISSOffsetValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0C0155AB8A50066CCC3 /* UISSOffsetValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD3061CEC3B0500D7AE9F /* UISSOffsetValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C1155AB8A50066CCC3 /* UISSOffsetValueConverter.m */; };
+		1B1CD3071CEC3B0500D7AE9F /* UISSPointValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0CB155ABCF30066CCC3 /* UISSPointValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD3081CEC3B0500D7AE9F /* UISSPointValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0CC155ABCF40066CCC3 /* UISSPointValueConverter.m */; };
+		1B1CD3091CEC3B0500D7AE9F /* UISSArgumentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E13B646515890CC800E3613B /* UISSArgumentValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD30A1CEC3B0E00D7AE9F /* UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B438B7143F668000F87518 /* UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD30B1CEC3B0E00D7AE9F /* UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B438B8143F668000F87518 /* UISS.m */; };
+		1B1CD30C1CEC3B0E00D7AE9F /* UISSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E1914CAD158F99BB00E04977 /* UISSStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD30D1CEC3B0E00D7AE9F /* UISSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8611584DCC70087BB1B /* UISSConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD30E1CEC3B0E00D7AE9F /* UISSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8621584DCC70087BB1B /* UISSConfig.m */; };
+		1B1CD30F1CEC3B1600D7AE9F /* UISSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1914CAE158F99BB00E04977 /* UISSStyle.m */; };
+		1B1CD3101CEC3B1600D7AE9F /* UISS+GestureRecognizers.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BB6EF9D36E1EAF33EC36 /* UISS+GestureRecognizers.m */; };
+		1B1CD3111CEC3B1600D7AE9F /* UISS+GestureRecognizers.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B4CE65CB70FCA36103FD /* UISS+GestureRecognizers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD3121CEC3B1600D7AE9F /* UISSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C64FF516DFE8AF004861ED /* UISSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1CD3131CEC3EFC00D7AE9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B43904143F702200F87518 /* UIKit.framework */; };
+		1B1CD3141CEC3F0400D7AE9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438B2143F668000F87518 /* Foundation.framework */; };
+		1B1CD3151CEC41B700D7AE9F /* UISSError.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C08346158E334E007A88E6 /* UISSError.m */; };
+		1BC9D4FA1CF37094009724E0 /* SAPUISS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1CD2AA1CEC38C200D7AE9F /* SAPUISS.framework */; };
+		C8D2B032C59FD11A701C83C8 /* UISSSettingDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8D2B2E56583BF0D585ECFC4 /* UISSSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B93A4CE1D6D274BC9D3D /* UISSSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8D2B403B49E791D1C7C7839 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
-		C8D2B5AED4BB2B1D68E5BA5C /* UISS+GestureRecognizers.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B4CE65CB70FCA36103FD /* UISS+GestureRecognizers.h */; };
+		C8D2B5AED4BB2B1D68E5BA5C /* UISS+GestureRecognizers.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B4CE65CB70FCA36103FD /* UISS+GestureRecognizers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8D2B6D7D19B634D46ADF86E /* UISSControlStateValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BEDF507CA856D0EC5FDF /* UISSControlStateValueConverterTests.m */; };
 		C8D2B737075866F8A4B09620 /* UISSImageResizingModeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */; };
 		C8D2B882971405B0DC662C1C /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
 		C8D2BA939890EB0161165E37 /* UIFont+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */; };
 		C8D2BA99525048D454BCA45D /* UISS+GestureRecognizers.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BB6EF9D36E1EAF33EC36 /* UISS+GestureRecognizers.m */; };
-		C8D2BABA25A2F8B6734D5E39 /* UISSImageResizingModeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeValueConverter.h */; };
+		C8D2BABA25A2F8B6734D5E39 /* UISSImageResizingModeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B85B301B08AE70AFFFB7 /* UISSImageResizingModeValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8D2BCA04FA368B1EF9B6692 /* UISSTextAlignmentValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B46579BB4A74DA7B5D27 /* UISSTextAlignmentValueConverter.m */; };
 		C8D2BDE3D04A0D24CCA2E6B8 /* UISSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BE76126D6B08745F39C2 /* UISSSettingsViewController.m */; };
-		C8D2BEB7BAC6C878B58BC1A9 /* UISSTextAlignmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B9582FDA98878B10CBA5 /* UISSTextAlignmentValueConverter.h */; };
+		C8D2BEB7BAC6C878B58BC1A9 /* UISSTextAlignmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D2B9582FDA98878B10CBA5 /* UISSTextAlignmentValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8D2BF2ADDB11891AE3310FA /* UISSSettingDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2B3AFF5607C8D195A9263 /* UISSSettingDescriptor.m */; };
 		C8D2BF8B489FC38682ED03F5 /* UIColor+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D2BFB8B66546E53D9B8591 /* UIColor+UISS.m */; };
-		E1076BEA157F6B1A00886759 /* UISSStatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */; };
+		E1076BEA157F6B1A00886759 /* UISSStatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1076BE8157F6B1A00886759 /* UISSStatusViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1076BEB157F6B1A00886759 /* UISSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1076BE9157F6B1A00886759 /* UISSStatusViewController.m */; };
 		E10D5E551574BBA400185009 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E4B1574BBA400185009 /* Icon-72.png */; };
 		E10D5E561574BBA400185009 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E4C1574BBA400185009 /* Icon-72@2x.png */; };
@@ -34,58 +136,58 @@
 		E10D5E5C1574BBA400185009 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E521574BBA400185009 /* Icon@2x.png */; };
 		E10D5E5D1574BBA400185009 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E531574BBA400185009 /* iTunesArtwork.png */; };
 		E10D5E5E1574BBA400185009 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E10D5E541574BBA400185009 /* iTunesArtwork@2x.png */; };
-		E116AF22157AA24E00BFB3D1 /* UISSPropertySetter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF20157AA24E00BFB3D1 /* UISSPropertySetter.h */; };
+		E116AF22157AA24E00BFB3D1 /* UISSPropertySetter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF20157AA24E00BFB3D1 /* UISSPropertySetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E116AF23157AA24E00BFB3D1 /* UISSPropertySetter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF21157AA24E00BFB3D1 /* UISSPropertySetter.m */; };
-		E116AF27157ABBA900BFB3D1 /* UISSArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF25157ABBA800BFB3D1 /* UISSArgument.h */; };
+		E116AF27157ABBA900BFB3D1 /* UISSArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF25157ABBA800BFB3D1 /* UISSArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E116AF28157ABBA900BFB3D1 /* UISSArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF26157ABBA800BFB3D1 /* UISSArgument.m */; };
-		E116AF2B157ABBCA00BFB3D1 /* UISSProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF29157ABBC900BFB3D1 /* UISSProperty.h */; };
+		E116AF2B157ABBCA00BFB3D1 /* UISSProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF29157ABBC900BFB3D1 /* UISSProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E116AF2C157ABBCA00BFB3D1 /* UISSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF2A157ABBC900BFB3D1 /* UISSProperty.m */; };
-		E116AF2F157ABBE000BFB3D1 /* UISSAxisParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF2D157ABBDF00BFB3D1 /* UISSAxisParameter.h */; };
+		E116AF2F157ABBE000BFB3D1 /* UISSAxisParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116AF2D157ABBDF00BFB3D1 /* UISSAxisParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E116AF30157ABBE000BFB3D1 /* UISSAxisParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116AF2E157ABBDF00BFB3D1 /* UISSAxisParameter.m */; };
-		E116C4F2156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */; };
+		E116C4F2156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E116C4F0156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E116C4F3156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E116C4F1156E7E4200CA1BCB /* UISSSearchBarIconValueConverter.m */; };
-		E123BA1E158A38FA004F8633 /* UISSAppearancePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E123BA1D158A38FA004F8633 /* UISSAppearancePrivate.h */; };
+		E123BA1E158A38FA004F8633 /* UISSAppearancePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E123BA1D158A38FA004F8633 /* UISSAppearancePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E123BD64158BA83B004F8633 /* UISSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BD63158BA83A004F8633 /* UISSTests.m */; };
 		E129E5CE1562F86100E93185 /* UISSCustomContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5CD1562F86100E93185 /* UISSCustomContainerView.m */; };
 		E129E5D41563C38D00E93185 /* UISSImageValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D31563C38D00E93185 /* UISSImageValueConverterTests.m */; };
 		E129E5D71563CCFB00E93185 /* UISSFontValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D61563CCFB00E93185 /* UISSFontValueConverterTests.m */; };
 		E129E5DA1563D44200E93185 /* UISSTextAttributesValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5D91563D44200E93185 /* UISSTextAttributesValueConverterTests.m */; };
-		E129E5DE1563DE5000E93185 /* UISSBarMetricsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5DC1563DE5000E93185 /* UISSBarMetricsValueConverter.h */; };
+		E129E5DE1563DE5000E93185 /* UISSBarMetricsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5DC1563DE5000E93185 /* UISSBarMetricsValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E129E5DF1563DE5000E93185 /* UISSBarMetricsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5DD1563DE5000E93185 /* UISSBarMetricsValueConverter.m */; };
-		E129E5E21563DE7B00E93185 /* UISSControlStateValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */; };
+		E129E5E21563DE7B00E93185 /* UISSControlStateValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E01563DE7B00E93185 /* UISSControlStateValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E129E5E31563DE7B00E93185 /* UISSControlStateValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E11563DE7B00E93185 /* UISSControlStateValueConverter.m */; };
-		E129E5E61563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */; };
+		E129E5E61563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5E41563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E129E5E71563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5E51563DEB700E93185 /* UISSSegmentedControlSegmentValueConverter.m */; };
 		E129E5EB1563DEF100E93185 /* UISSUIKitEnumsValueConvertersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5EA1563DEF100E93185 /* UISSUIKitEnumsValueConvertersTests.m */; };
-		E129E5EE1563F54800E93185 /* UISSAbstractEnumValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5EC1563F54800E93185 /* UISSAbstractEnumValueConverter.h */; };
+		E129E5EE1563F54800E93185 /* UISSAbstractEnumValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E129E5EC1563F54800E93185 /* UISSAbstractEnumValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E129E5EF1563F54800E93185 /* UISSAbstractEnumValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E129E5ED1563F54800E93185 /* UISSAbstractEnumValueConverter.m */; };
 		E12C10A8157ACB0C00F9008D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12C10A7157ACB0C00F9008D /* QuartzCore.framework */; };
-		E12DA0B0155A9D410066CCC3 /* UISSSizeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0AE155A9D410066CCC3 /* UISSSizeValueConverter.h */; };
+		E12DA0B0155A9D410066CCC3 /* UISSSizeValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0AE155A9D410066CCC3 /* UISSSizeValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E12DA0B1155A9D410066CCC3 /* UISSSizeValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0AF155A9D410066CCC3 /* UISSSizeValueConverter.m */; };
-		E12DA0B4155A9D550066CCC3 /* UISSRectValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0B2155A9D550066CCC3 /* UISSRectValueConverter.h */; };
+		E12DA0B4155A9D550066CCC3 /* UISSRectValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0B2155A9D550066CCC3 /* UISSRectValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E12DA0B5155A9D550066CCC3 /* UISSRectValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0B3155A9D550066CCC3 /* UISSRectValueConverter.m */; };
 		E12DA0BB155A9F640066CCC3 /* UISSSizeValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0BA155A9F640066CCC3 /* UISSSizeValueConverterTests.m */; };
-		E12DA0BE155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0BC155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h */; };
+		E12DA0BE155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0BC155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E12DA0BF155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0BD155AB88F0066CCC3 /* UISSEdgeInsetsValueConverter.m */; };
-		E12DA0C2155AB8A50066CCC3 /* UISSOffsetValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0C0155AB8A50066CCC3 /* UISSOffsetValueConverter.h */; };
+		E12DA0C2155AB8A50066CCC3 /* UISSOffsetValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0C0155AB8A50066CCC3 /* UISSOffsetValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E12DA0C3155AB8A50066CCC3 /* UISSOffsetValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C1155AB8A50066CCC3 /* UISSOffsetValueConverter.m */; };
 		E12DA0C7155AB9940066CCC3 /* UISSEdgeInsetsValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C4155AB9940066CCC3 /* UISSEdgeInsetsValueConverterTests.m */; };
 		E12DA0C8155AB9940066CCC3 /* UISSOffsetValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C5155AB9940066CCC3 /* UISSOffsetValueConverterTests.m */; };
 		E12DA0C9155AB9940066CCC3 /* UISSRectValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0C6155AB9940066CCC3 /* UISSRectValueConverterTests.m */; };
-		E12DA0CD155ABCF40066CCC3 /* UISSPointValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0CB155ABCF30066CCC3 /* UISSPointValueConverter.h */; };
+		E12DA0CD155ABCF40066CCC3 /* UISSPointValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0CB155ABCF30066CCC3 /* UISSPointValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E12DA0CE155ABCF40066CCC3 /* UISSPointValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0CC155ABCF40066CCC3 /* UISSPointValueConverter.m */; };
 		E12DA0D1155ABD770066CCC3 /* UISSPointValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D0155ABD770066CCC3 /* UISSPointValueConverterTests.m */; };
-		E12DA0D5155ABE500066CCC3 /* UISSIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D3155ABE500066CCC3 /* UISSIntegerValueConverter.h */; };
+		E12DA0D5155ABE500066CCC3 /* UISSIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D3155ABE500066CCC3 /* UISSIntegerValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E12DA0D6155ABE500066CCC3 /* UISSIntegerValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D4155ABE500066CCC3 /* UISSIntegerValueConverter.m */; };
-		E12DA0D9155ABE5E0066CCC3 /* UISSFloatValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D7155ABE5E0066CCC3 /* UISSFloatValueConverter.h */; };
+		E12DA0D9155ABE5E0066CCC3 /* UISSFloatValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E12DA0D7155ABE5E0066CCC3 /* UISSFloatValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E12DA0DA155ABE5E0066CCC3 /* UISSFloatValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0D8155ABE5E0066CCC3 /* UISSFloatValueConverter.m */; };
 		E12DA0DD155ABEA00066CCC3 /* UISSFloatValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0DB155ABEA00066CCC3 /* UISSFloatValueConverterTests.m */; };
 		E12DA0DE155ABEA00066CCC3 /* UISSIntegerValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E12DA0DC155ABEA00066CCC3 /* UISSIntegerValueConverterTests.m */; };
-		E13B646615890CC800E3613B /* UISSArgumentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E13B646515890CC800E3613B /* UISSArgumentValueConverter.h */; };
-		E145C8581584AF820087BB1B /* NSString+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8561584AF820087BB1B /* NSString+UISS.h */; };
+		E13B646615890CC800E3613B /* UISSArgumentValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E13B646515890CC800E3613B /* UISSArgumentValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E145C8581584AF820087BB1B /* NSString+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8561584AF820087BB1B /* NSString+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E145C8591584AF820087BB1B /* NSString+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8571584AF820087BB1B /* NSString+UISS.m */; };
 		E145C85C1584B7D40087BB1B /* UISSPropertySetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C85B1584B7D40087BB1B /* UISSPropertySetterTests.m */; };
-		E145C8631584DCC70087BB1B /* UISSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8611584DCC70087BB1B /* UISSConfig.h */; };
+		E145C8631584DCC70087BB1B /* UISSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E145C8611584DCC70087BB1B /* UISSConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E145C8641584DCC70087BB1B /* UISSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E145C8621584DCC70087BB1B /* UISSConfig.m */; };
 		E14698131558313A000F311F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E146980F1558313A000F311F /* first.png */; };
 		E14698141558313A000F311F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E14698101558313A000F311F /* first@2x.png */; };
@@ -100,40 +202,40 @@
 		E146982C155846F4000F311F /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = E146982B155846F4000F311F /* example.json */; };
 		E146983415584700000F311F /* ExampleJSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E146982E15584700000F311F /* ExampleJSONTests.m */; };
 		E146983A15584831000F311F /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = E146983915584831000F311F /* black.png */; };
-		E1469840155905FE000F311F /* UISSColorValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146983E155905FE000F311F /* UISSColorValueConverter.h */; };
+		E1469840155905FE000F311F /* UISSColorValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146983E155905FE000F311F /* UISSColorValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1469841155905FE000F311F /* UISSColorValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146983F155905FE000F311F /* UISSColorValueConverter.m */; };
-		E146984415590709000F311F /* UISSFontValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984215590709000F311F /* UISSFontValueConverter.h */; };
+		E146984415590709000F311F /* UISSFontValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984215590709000F311F /* UISSFontValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E146984515590709000F311F /* UISSFontValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984315590709000F311F /* UISSFontValueConverter.m */; };
 		E146984B15598AAB000F311F /* UISSColorValueConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984A15598AAB000F311F /* UISSColorValueConverterTests.m */; };
-		E146984E1559B24C000F311F /* UISSImageValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984C1559B24C000F311F /* UISSImageValueConverter.h */; };
+		E146984E1559B24C000F311F /* UISSImageValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E146984C1559B24C000F311F /* UISSImageValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E146984F1559B24C000F311F /* UISSImageValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E146984D1559B24C000F311F /* UISSImageValueConverter.m */; };
-		E1469852155A6D0E000F311F /* UISSTextAttributesValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469850155A6D0E000F311F /* UISSTextAttributesValueConverter.h */; };
+		E1469852155A6D0E000F311F /* UISSTextAttributesValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469850155A6D0E000F311F /* UISSTextAttributesValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1469853155A6D0E000F311F /* UISSTextAttributesValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469851155A6D0E000F311F /* UISSTextAttributesValueConverter.m */; };
-		E146985A155A85EC000F311F /* UISSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469858155A85EC000F311F /* UISSParser.h */; };
+		E146985A155A85EC000F311F /* UISSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E1469858155A85EC000F311F /* UISSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E146985B155A85EC000F311F /* UISSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469859155A85EC000F311F /* UISSParser.m */; };
 		E1469862155A8B51000F311F /* UISSParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1469861155A8B51000F311F /* UISSParserTests.m */; };
-		E15B384B1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B38491572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.h */; };
+		E15B384B1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B38491572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E15B384C1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B384A1572579F005BFF73 /* UISSUserInterfaceIdiomPreprocessor.m */; };
-		E15B384F157257C3005BFF73 /* UISSDictionaryPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B384E157257C3005BFF73 /* UISSDictionaryPreprocessor.h */; };
-		E16055381684F90100722458 /* NSArray+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E16055361684F90100722458 /* NSArray+UISS.h */; };
+		E15B384F157257C3005BFF73 /* UISSDictionaryPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B384E157257C3005BFF73 /* UISSDictionaryPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E16055381684F90100722458 /* NSArray+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E16055361684F90100722458 /* NSArray+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E16055391684F90100722458 /* NSArray+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E16055371684F90100722458 /* NSArray+UISS.m */; };
-		E17E43BD159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E17E43BB159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.h */; };
+		E17E43BD159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E17E43BB159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E17E43BE159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E17E43BC159A6B4200DFBB26 /* UISSDisabledKeysPreprocessor.m */; };
-		E18C7C1F158F52B1000D45AC /* UISSErrorsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E18C7C1D158F52B1000D45AC /* UISSErrorsViewController.h */; };
+		E18C7C1F158F52B1000D45AC /* UISSErrorsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E18C7C1D158F52B1000D45AC /* UISSErrorsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E18C7C20158F52B1000D45AC /* UISSErrorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18C7C1E158F52B1000D45AC /* UISSErrorsViewController.m */; };
-		E1914CAF158F99BB00E04977 /* UISSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E1914CAD158F99BB00E04977 /* UISSStyle.h */; };
+		E1914CAF158F99BB00E04977 /* UISSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = E1914CAD158F99BB00E04977 /* UISSStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1914CB0158F99BB00E04977 /* UISSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E1914CAE158F99BB00E04977 /* UISSStyle.m */; };
 		E19759FF15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19759FE15725C220076674C /* UISSUserInterfaceIdiomPreprocessorTests.m */; };
-		E19B54E915A7689D005AFD13 /* UISSParserContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54E715A7689D005AFD13 /* UISSParserContext.h */; };
+		E19B54E915A7689D005AFD13 /* UISSParserContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54E715A7689D005AFD13 /* UISSParserContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E19B54EA15A7689D005AFD13 /* UISSParserContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54E815A7689D005AFD13 /* UISSParserContext.m */; };
-		E19B54EF15A81F56005AFD13 /* UISSCodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54ED15A81F56005AFD13 /* UISSCodeGenerator.h */; };
+		E19B54EF15A81F56005AFD13 /* UISSCodeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E19B54ED15A81F56005AFD13 /* UISSCodeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E19B54F015A81F56005AFD13 /* UISSCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54EE15A81F56005AFD13 /* UISSCodeGenerator.m */; };
 		E19B54F415A82070005AFD13 /* UISSCodeGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E19B54F315A82070005AFD13 /* UISSCodeGeneratorTests.m */; };
-		E1A7739815668F80000406CC /* UILabel+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A7739615668F80000406CC /* UILabel+UISS.h */; };
+		E1A7739815668F80000406CC /* UILabel+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A7739615668F80000406CC /* UILabel+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1A7739915668F80000406CC /* UILabel+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A7739715668F80000406CC /* UILabel+UISS.m */; };
-		E1A775B21566E8D6000406CC /* UISSToolbarPositionValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775B01566E8D6000406CC /* UISSToolbarPositionValueConverter.h */; };
+		E1A775B21566E8D6000406CC /* UISSToolbarPositionValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775B01566E8D6000406CC /* UISSToolbarPositionValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1A775B31566E8D6000406CC /* UISSToolbarPositionValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775B11566E8D6000406CC /* UISSToolbarPositionValueConverter.m */; };
-		E1A775BC1567945D000406CC /* UISSVariablesPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775BA1567945D000406CC /* UISSVariablesPreprocessor.h */; };
+		E1A775BC1567945D000406CC /* UISSVariablesPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A775BA1567945D000406CC /* UISSVariablesPreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1A775BD1567945D000406CC /* UISSVariablesPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775BB1567945D000406CC /* UISSVariablesPreprocessor.m */; };
 		E1A775C11567A814000406CC /* UISSVariablesPreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A775C01567A814000406CC /* UISSVariablesPreprocessorTests.m */; };
 		E1AE93B916AC846800E6DF0E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AE93B216AC846800E6DF0E /* Default-568h@2x.png */; };
@@ -146,19 +248,19 @@
 		E1B438B3143F668000F87518 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438B2143F668000F87518 /* Foundation.framework */; };
 		E1B438B9143F668000F87518 /* UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B438B8143F668000F87518 /* UISS.m */; };
 		E1B43906143F702F00F87518 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B43904143F702200F87518 /* UIKit.framework */; };
-		E1BBEBEF1598776D001F7A60 /* UISSStatusView.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BBEBED1598776C001F7A60 /* UISSStatusView.h */; };
+		E1BBEBEF1598776D001F7A60 /* UISSStatusView.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BBEBED1598776C001F7A60 /* UISSStatusView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1BBEBF01598776D001F7A60 /* UISSStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BBEBEE1598776C001F7A60 /* UISSStatusView.m */; };
-		E1BCCC35157F634B001E4429 /* UISSConsoleViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BCCC33157F634B001E4429 /* UISSConsoleViewController.h */; };
+		E1BCCC35157F634B001E4429 /* UISSConsoleViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BCCC33157F634B001E4429 /* UISSConsoleViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1BCCC36157F634B001E4429 /* UISSConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BCCC34157F634B001E4429 /* UISSConsoleViewController.m */; };
-		E1C08347158E334E007A88E6 /* UISSError.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C08345158E334E007A88E6 /* UISSError.h */; };
+		E1C08347158E334E007A88E6 /* UISSError.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C08345158E334E007A88E6 /* UISSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1C08348158E334E007A88E6 /* UISSError.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C08346158E334E007A88E6 /* UISSError.m */; };
-		E1C64FF616DFE8AF004861ED /* UISSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C64FF516DFE8AF004861ED /* UISSMacros.h */; };
+		E1C64FF616DFE8AF004861ED /* UISSMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C64FF516DFE8AF004861ED /* UISSMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1C6501116E29D91004861ED /* button-background-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = E1C6500D16E29D91004861ED /* button-background-highlighted.png */; };
 		E1C6501216E29D91004861ED /* button-background-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1C6500E16E29D91004861ED /* button-background-highlighted@2x.png */; };
 		E1C6501316E29D91004861ED /* button-background-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E1C6500F16E29D91004861ED /* button-background-normal.png */; };
 		E1C6501416E29D91004861ED /* button-background-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1C6501016E29D91004861ED /* button-background-normal@2x.png */; };
 		E1C67BD3158BABC500E220BB /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = E146983915584831000F311F /* black.png */; };
-		E1C67BD6158CCBD800E220BB /* UISSGeneratedCodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C67BD4158CCBD800E220BB /* UISSGeneratedCodeViewController.h */; };
+		E1C67BD6158CCBD800E220BB /* UISSGeneratedCodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C67BD4158CCBD800E220BB /* UISSGeneratedCodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1C67BD7158CCBD800E220BB /* UISSGeneratedCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C67BD5158CCBD800E220BB /* UISSGeneratedCodeViewController.m */; };
 		E1EB6E2015C07B4F00F4055F /* UISSResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1EB6E1E15C07A8500F4055F /* UISSResources.bundle */; };
 		E1ED8BE31450D4E200302B61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B43904143F702200F87518 /* UIKit.framework */; };
@@ -172,23 +274,22 @@
 		E1ED8C0D1450D4E200302B61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B43904143F702200F87518 /* UIKit.framework */; };
 		E1ED8C0E1450D4E200302B61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438B2143F668000F87518 /* Foundation.framework */; };
 		E1ED8C161450D4E200302B61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1ED8C141450D4E200302B61 /* InfoPlist.strings */; };
-		E1ED8C211450D5E600302B61 /* libUISS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B438AF143F668000F87518 /* libUISS.a */; };
 		E1F2B9C515814486008EE145 /* UISSPrivateAppearanceMethodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F2B9C415814486008EE145 /* UISSPrivateAppearanceMethodsTests.m */; };
-		E1F35EB11593A3F20074389E /* UIView+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F35EAF1593A3F20074389E /* UIView+UISS.h */; };
+		E1F35EB11593A3F20074389E /* UIView+UISS.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F35EAF1593A3F20074389E /* UIView+UISS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1F35EB21593A3F20074389E /* UIView+UISS.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F35EB01593A3F20074389E /* UIView+UISS.m */; };
-		E1F48245156259FE00CFA72E /* UISSUIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F48243156259FE00CFA72E /* UISSUIntegerValueConverter.h */; };
+		E1F48245156259FE00CFA72E /* UISSUIntegerValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F48243156259FE00CFA72E /* UISSUIntegerValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1F48246156259FE00CFA72E /* UISSUIntegerValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F48244156259FE00CFA72E /* UISSUIntegerValueConverter.m */; };
-		E1F6E2F4157EC35B00A5187E /* UISSStatusWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F6E2F2157EC35B00A5187E /* UISSStatusWindow.h */; };
+		E1F6E2F4157EC35B00A5187E /* UISSStatusWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F6E2F2157EC35B00A5187E /* UISSStatusWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1F6E2F5157EC35B00A5187E /* UISSStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F6E2F3157EC35B00A5187E /* UISSStatusWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E1EA711716CC5B5A00EE20F9 /* PBXContainerItemProxy */ = {
+		1BC9D4FB1CF3709E009724E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E1B438A6143F667F00F87518 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E1B438AE143F668000F87518;
-			remoteInfo = UISS;
+			remoteGlobalIDString = 1B1CD2A91CEC38C200D7AE9F;
+			remoteInfo = SAPUISS;
 		};
 		E1ED8C0F1450D4E200302B61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -200,6 +301,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B1CD2AA1CEC38C200D7AE9F /* SAPUISS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAPUISS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1CD2AC1CEC38C200D7AE9F /* SAPUISS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAPUISS.h; sourceTree = "<group>"; };
+		1B1CD2AE1CEC38C200D7AE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8D2B021E9CB72A0ADBADDEE /* UISSSettingDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISSSettingDescriptor.h; sourceTree = "<group>"; };
 		C8D2B2AB02BB0DD97B7675C3 /* UISSImageResizingModeValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSImageResizingModeValueConverter.m; sourceTree = "<group>"; };
 		C8D2B38720F19D0CC0E45FFB /* UIFont+UISS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+UISS.m"; sourceTree = "<group>"; };
@@ -384,6 +488,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B1CD2A61CEC38C200D7AE9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1CD3141CEC3F0400D7AE9F /* Foundation.framework in Frameworks */,
+				1B1CD3131CEC3EFC00D7AE9F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B438AC143F668000F87518 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,8 +510,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC9D4FA1CF37094009724E0 /* SAPUISS.framework in Frameworks */,
 				E12C10A8157ACB0C00F9008D /* QuartzCore.framework in Frameworks */,
-				E1ED8C211450D5E600302B61 /* libUISS.a in Frameworks */,
 				E1ED8BE31450D4E200302B61 /* UIKit.framework in Frameworks */,
 				E1ED8BE41450D4E200302B61 /* Foundation.framework in Frameworks */,
 				E1ED8BE51450D4E200302B61 /* CoreGraphics.framework in Frameworks */,
@@ -418,6 +531,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1CD2AB1CEC38C200D7AE9F /* SAPUISS */ = {
+			isa = PBXGroup;
+			children = (
+				1B1CD2AC1CEC38C200D7AE9F /* SAPUISS.h */,
+				1B1CD2AE1CEC38C200D7AE9F /* Info.plist */,
+			);
+			path = SAPUISS;
+			sourceTree = "<group>";
+		};
 		C8D2B365C39AD097A4C427D2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,6 +912,7 @@
 				E1B438B4143F668000F87518 /* UISS */,
 				E1ED8BE61450D4E200302B61 /* UISSDemo */,
 				E1ED8C111450D4E200302B61 /* UISSDemoTests */,
+				1B1CD2AB1CEC38C200D7AE9F /* SAPUISS */,
 				E1B438B1143F668000F87518 /* Frameworks */,
 				E1B438B0143F668000F87518 /* Products */,
 				E1EB6E1E15C07A8500F4055F /* UISSResources.bundle */,
@@ -803,6 +926,7 @@
 				E1B438AF143F668000F87518 /* libUISS.a */,
 				E1ED8BE11450D4E100302B61 /* UISSDemo.app */,
 				E1ED8C0B1450D4E200302B61 /* UISSDemoTests.octest */,
+				1B1CD2AA1CEC38C200D7AE9F /* SAPUISS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -937,6 +1061,65 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1B1CD2A71CEC38C200D7AE9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1CD2B61CEC3AA800D7AE9F /* UISSAppearancePrivate.h in Headers */,
+				1B1CD3111CEC3B1600D7AE9F /* UISS+GestureRecognizers.h in Headers */,
+				1B1CD2F11CEC3AF800D7AE9F /* UISSColorValueConverter.h in Headers */,
+				1B1CD2B91CEC3ABB00D7AE9F /* UISSError.h in Headers */,
+				1B1CD2F91CEC3AFF00D7AE9F /* UISSIntegerValueConverter.h in Headers */,
+				1B1CD2FF1CEC3B0500D7AE9F /* UISSSizeValueConverter.h in Headers */,
+				1B1CD2E51CEC3AF200D7AE9F /* UISSControlStateValueConverter.h in Headers */,
+				1B1CD2DD1CEC3AE600D7AE9F /* UILabel+UISS.h in Headers */,
+				1B1CD2D51CEC3ADF00D7AE9F /* UISSUserInterfaceIdiomPreprocessor.h in Headers */,
+				1B1CD2C91CEC3ACA00D7AE9F /* UISSSettingDescriptor.h in Headers */,
+				1B1CD3091CEC3B0500D7AE9F /* UISSArgumentValueConverter.h in Headers */,
+				1B1CD2F51CEC3AF800D7AE9F /* UISSFontValueConverter.h in Headers */,
+				1B1CD2B21CEC3AA300D7AE9F /* NSString+UISS.h in Headers */,
+				1B1CD2B71CEC3AB700D7AE9F /* UISSCodeGenerator.h in Headers */,
+				1B1CD2E71CEC3AF200D7AE9F /* UISSSegmentedControlSegmentValueConverter.h in Headers */,
+				1B1CD2D91CEC3ADF00D7AE9F /* UISSParser.h in Headers */,
+				1B1CD2DB1CEC3ADF00D7AE9F /* UISSParserContext.h in Headers */,
+				1B1CD2FD1CEC3AFF00D7AE9F /* UISSFloatValueConverter.h in Headers */,
+				1B1CD2FB1CEC3AFF00D7AE9F /* UISSUIntegerValueConverter.h in Headers */,
+				1B1CD30D1CEC3B0E00D7AE9F /* UISSConfig.h in Headers */,
+				1B1CD2E31CEC3AF200D7AE9F /* UISSBarMetricsValueConverter.h in Headers */,
+				1B1CD2EB1CEC3AF200D7AE9F /* UISSSearchBarIconValueConverter.h in Headers */,
+				1B1CD2C61CEC3ACA00D7AE9F /* UISSSettingsViewController.h in Headers */,
+				1B1CD2C41CEC3AC400D7AE9F /* UISSErrorsViewController.h in Headers */,
+				1B1CD2D01CEC3ADA00D7AE9F /* UISSAxisParameter.h in Headers */,
+				1B1CD2CE1CEC3ADA00D7AE9F /* UISSProperty.h in Headers */,
+				1B1CD30C1CEC3B0E00D7AE9F /* UISSStyle.h in Headers */,
+				1B1CD3121CEC3B1600D7AE9F /* UISSMacros.h in Headers */,
+				1B1CD3011CEC3B0500D7AE9F /* UISSRectValueConverter.h in Headers */,
+				1B1CD2CA1CEC3ADA00D7AE9F /* UISSPropertySetter.h in Headers */,
+				1B1CD3071CEC3B0500D7AE9F /* UISSPointValueConverter.h in Headers */,
+				1B1CD2C21CEC3AC400D7AE9F /* UISSGeneratedCodeViewController.h in Headers */,
+				1B1CD2F01CEC3AF200D7AE9F /* UISSTextAlignmentValueConverter.h in Headers */,
+				1B1CD2B41CEC3AA300D7AE9F /* NSArray+UISS.h in Headers */,
+				1B1CD2DF1CEC3AE600D7AE9F /* UIView+UISS.h in Headers */,
+				1B1CD30A1CEC3B0E00D7AE9F /* UISS.h in Headers */,
+				1B1CD2CC1CEC3ADA00D7AE9F /* UISSArgument.h in Headers */,
+				1B1CD2BA1CEC3AC400D7AE9F /* UISSStatusWindow.h in Headers */,
+				1B1CD2EE1CEC3AF200D7AE9F /* UISSImageResizingModeValueConverter.h in Headers */,
+				1B1CD2F31CEC3AF800D7AE9F /* UISSImageValueConverter.h in Headers */,
+				1B1CD2E91CEC3AF200D7AE9F /* UISSToolbarPositionValueConverter.h in Headers */,
+				1B1CD2C01CEC3AC400D7AE9F /* UISSConsoleViewController.h in Headers */,
+				1B1CD2BC1CEC3AC400D7AE9F /* UISSStatusViewController.h in Headers */,
+				1B1CD2D31CEC3ADF00D7AE9F /* UISSVariablesPreprocessor.h in Headers */,
+				1B1CD3051CEC3B0500D7AE9F /* UISSOffsetValueConverter.h in Headers */,
+				1B1CD2F71CEC3AF800D7AE9F /* UISSTextAttributesValueConverter.h in Headers */,
+				1B1CD2D71CEC3ADF00D7AE9F /* UISSDisabledKeysPreprocessor.h in Headers */,
+				1B1CD3031CEC3B0500D7AE9F /* UISSEdgeInsetsValueConverter.h in Headers */,
+				1B1CD2E11CEC3AF200D7AE9F /* UISSAbstractEnumValueConverter.h in Headers */,
+				1B1CD2BE1CEC3AC400D7AE9F /* UISSStatusView.h in Headers */,
+				1B1CD2D21CEC3ADF00D7AE9F /* UISSDictionaryPreprocessor.h in Headers */,
+				1B1CD2AD1CEC38C200D7AE9F /* SAPUISS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B438AD143F668000F87518 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -997,6 +1180,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1B1CD2A91CEC38C200D7AE9F /* SAPUISS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B1CD2B11CEC38C200D7AE9F /* Build configuration list for PBXNativeTarget "SAPUISS" */;
+			buildPhases = (
+				1B1CD2A51CEC38C200D7AE9F /* Sources */,
+				1B1CD2A61CEC38C200D7AE9F /* Frameworks */,
+				1B1CD2A71CEC38C200D7AE9F /* Headers */,
+				1B1CD2A81CEC38C200D7AE9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAPUISS;
+			productName = SAPUISS;
+			productReference = 1B1CD2AA1CEC38C200D7AE9F /* SAPUISS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E1B438AE143F668000F87518 /* UISS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B438D3143F668000F87518 /* Build configuration list for PBXNativeTarget "UISS" */;
@@ -1025,7 +1226,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E1EA711816CC5B5A00EE20F9 /* PBXTargetDependency */,
+				1BC9D4FC1CF3709E009724E0 /* PBXTargetDependency */,
 			);
 			name = UISSDemo;
 			productName = UISSDemo;
@@ -1057,9 +1258,14 @@
 		E1B438A6143F667F00F87518 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastTestingUpgradeCheck = 0700;
+				LastTestingUpgradeCheck = 0730;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = 57things;
+				TargetAttributes = {
+					1B1CD2A91CEC38C200D7AE9F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
 			};
 			buildConfigurationList = E1B438A9143F667F00F87518 /* Build configuration list for PBXProject "UISS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1076,11 +1282,19 @@
 				E1B438AE143F668000F87518 /* UISS */,
 				E1ED8BE01450D4E100302B61 /* UISSDemo */,
 				E1ED8C0A1450D4E200302B61 /* UISSDemoTests */,
+				1B1CD2A91CEC38C200D7AE9F /* SAPUISS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B1CD2A81CEC38C200D7AE9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1ED8BDF1450D4E100302B61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1149,6 +1363,60 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B1CD2A51CEC38C200D7AE9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1CD3151CEC41B700D7AE9F /* UISSError.m in Sources */,
+				1B1CD2DE1CEC3AE600D7AE9F /* UILabel+UISS.m in Sources */,
+				1B1CD2DC1CEC3ADF00D7AE9F /* UISSParserContext.m in Sources */,
+				1B1CD30B1CEC3B0E00D7AE9F /* UISS.m in Sources */,
+				1B1CD2FA1CEC3AFF00D7AE9F /* UISSIntegerValueConverter.m in Sources */,
+				1B1CD2BF1CEC3AC400D7AE9F /* UISSStatusView.m in Sources */,
+				1B1CD2F61CEC3AF800D7AE9F /* UISSFontValueConverter.m in Sources */,
+				1B1CD3001CEC3B0500D7AE9F /* UISSSizeValueConverter.m in Sources */,
+				1B1CD2E81CEC3AF200D7AE9F /* UISSSegmentedControlSegmentValueConverter.m in Sources */,
+				1B1CD2B81CEC3AB700D7AE9F /* UISSCodeGenerator.m in Sources */,
+				1B1CD2E61CEC3AF200D7AE9F /* UISSControlStateValueConverter.m in Sources */,
+				1B1CD2D61CEC3ADF00D7AE9F /* UISSUserInterfaceIdiomPreprocessor.m in Sources */,
+				1B1CD3021CEC3B0500D7AE9F /* UISSRectValueConverter.m in Sources */,
+				1B1CD2CD1CEC3ADA00D7AE9F /* UISSArgument.m in Sources */,
+				1B1CD2E41CEC3AF200D7AE9F /* UISSBarMetricsValueConverter.m in Sources */,
+				1B1CD2F21CEC3AF800D7AE9F /* UISSColorValueConverter.m in Sources */,
+				1B1CD3061CEC3B0500D7AE9F /* UISSOffsetValueConverter.m in Sources */,
+				1B1CD2BB1CEC3AC400D7AE9F /* UISSStatusWindow.m in Sources */,
+				1B1CD2CF1CEC3ADA00D7AE9F /* UISSProperty.m in Sources */,
+				1B1CD2EC1CEC3AF200D7AE9F /* UISSSearchBarIconValueConverter.m in Sources */,
+				1B1CD2CB1CEC3ADA00D7AE9F /* UISSPropertySetter.m in Sources */,
+				1B1CD2C31CEC3AC400D7AE9F /* UISSGeneratedCodeViewController.m in Sources */,
+				1B1CD2E01CEC3AE600D7AE9F /* UIView+UISS.m in Sources */,
+				1B1CD2F41CEC3AF800D7AE9F /* UISSImageValueConverter.m in Sources */,
+				1B1CD3041CEC3B0500D7AE9F /* UISSEdgeInsetsValueConverter.m in Sources */,
+				1B1CD2D81CEC3ADF00D7AE9F /* UISSDisabledKeysPreprocessor.m in Sources */,
+				1B1CD2BD1CEC3AC400D7AE9F /* UISSStatusViewController.m in Sources */,
+				1B1CD2DA1CEC3ADF00D7AE9F /* UISSParser.m in Sources */,
+				1B1CD2EA1CEC3AF200D7AE9F /* UISSToolbarPositionValueConverter.m in Sources */,
+				1B1CD2FC1CEC3AFF00D7AE9F /* UISSUIntegerValueConverter.m in Sources */,
+				1B1CD2ED1CEC3AF200D7AE9F /* UISSImageResizingModeValueConverter.m in Sources */,
+				1B1CD2C81CEC3ACA00D7AE9F /* UISSSettingDescriptor.m in Sources */,
+				1B1CD30F1CEC3B1600D7AE9F /* UISSStyle.m in Sources */,
+				1B1CD2C71CEC3ACA00D7AE9F /* UISSSettingsViewController.m in Sources */,
+				1B1CD2E21CEC3AF200D7AE9F /* UISSAbstractEnumValueConverter.m in Sources */,
+				1B1CD2D41CEC3ADF00D7AE9F /* UISSVariablesPreprocessor.m in Sources */,
+				1B1CD2C51CEC3AC400D7AE9F /* UISSErrorsViewController.m in Sources */,
+				1B1CD2EF1CEC3AF200D7AE9F /* UISSTextAlignmentValueConverter.m in Sources */,
+				1B1CD2B51CEC3AA300D7AE9F /* NSArray+UISS.m in Sources */,
+				1B1CD30E1CEC3B0E00D7AE9F /* UISSConfig.m in Sources */,
+				1B1CD3101CEC3B1600D7AE9F /* UISS+GestureRecognizers.m in Sources */,
+				1B1CD2F81CEC3AF800D7AE9F /* UISSTextAttributesValueConverter.m in Sources */,
+				1B1CD2FE1CEC3AFF00D7AE9F /* UISSFloatValueConverter.m in Sources */,
+				1B1CD2B31CEC3AA300D7AE9F /* NSString+UISS.m in Sources */,
+				1B1CD2D11CEC3ADA00D7AE9F /* UISSAxisParameter.m in Sources */,
+				1B1CD2C11CEC3AC400D7AE9F /* UISSConsoleViewController.m in Sources */,
+				1B1CD3081CEC3B0500D7AE9F /* UISSPointValueConverter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B438AB143F668000F87518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1251,10 +1519,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E1EA711816CC5B5A00EE20F9 /* PBXTargetDependency */ = {
+		1BC9D4FC1CF3709E009724E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1B438AE143F668000F87518 /* UISS */;
-			targetProxy = E1EA711716CC5B5A00EE20F9 /* PBXContainerItemProxy */;
+			target = 1B1CD2A91CEC38C200D7AE9F /* SAPUISS */;
+			targetProxy = 1BC9D4FB1CF3709E009724E0 /* PBXContainerItemProxy */;
 		};
 		E1ED8C101450D4E200302B61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1299,6 +1567,93 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1B1CD2AF1CEC38C200D7AE9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SAPUISS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.57things.SAPUISS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYMROOT = "$(SRCROOT)/build";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B1CD2B01CEC38C200D7AE9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SAPUISS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.57things.SAPUISS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = "$(SRCROOT)/build";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E1B438D1143F668000F87518 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1362,6 +1717,7 @@
 		E1B438D4143F668000F87518 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/UISS.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1377,6 +1733,7 @@
 		E1B438D5143F668000F87518 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/UISS.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1392,11 +1749,13 @@
 		E1ED8C1B1450D4E200302B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1406,11 +1765,13 @@
 		E1ED8C1C1450D4E200302B61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISSDemo/UISSDemo-Prefix.pch";
 				INFOPLIST_FILE = "UISSDemo/UISSDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1455,6 +1816,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B1CD2B11CEC38C200D7AE9F /* Build configuration list for PBXNativeTarget "SAPUISS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B1CD2AF1CEC38C200D7AE9F /* Debug */,
+				1B1CD2B01CEC38C200D7AE9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1B438A9143F667F00F87518 /* Build configuration list for PBXProject "UISS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

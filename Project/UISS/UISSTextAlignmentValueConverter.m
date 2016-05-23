@@ -1,7 +1,7 @@
 //
 // Copyright 2013 Taptera Inc. All rights reserved.
 //
-
+@import UIKit;
 #import "UISSTextAlignmentValueConverter.h"
 
 

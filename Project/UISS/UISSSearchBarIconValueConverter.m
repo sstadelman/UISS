@@ -1,7 +1,7 @@
 //
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
-
+@import UIKit;
 #import "UISSSearchBarIconValueConverter.h"
 
 @implementation UISSSearchBarIconValueConverter

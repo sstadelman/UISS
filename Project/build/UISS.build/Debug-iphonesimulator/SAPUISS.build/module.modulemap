@@ -1,0 +1,6 @@
+framework module SAPUISS {
+  umbrella header "SAPUISS.h"
+
+  export *
+  module * { export * }
+}

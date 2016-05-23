@@ -2,6 +2,7 @@
 // Copyright (c) 2013 Robert Wijas. All rights reserved.
 //
 
+@import UIKit;
 #import "UISSSegmentedControlSegmentValueConverter.h"
 
 @implementation UISSSegmentedControlSegmentValueConverter
@@ -16,7 +17,7 @@
     self = [super init];
     if (self) {
         self.stringToValueDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                        [NSNumber numberWithInteger:UISegmentedControlSegmentAny], @"any",
+                                        [NSNumber numberWithInteger: UISegmentedControlSegmentAny], @"any",
                                         [NSNumber numberWithInteger:UISegmentedControlSegmentLeft], @"left",
                                         [NSNumber numberWithInteger:UISegmentedControlSegmentCenter], @"center",
                                         [NSNumber numberWithInteger:UISegmentedControlSegmentRight], @"right",

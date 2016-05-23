@@ -1,0 +1,294 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/i826181/github/UISS/Project/build/Debug-iphonesimulator/SAPUISS.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSArray+UISS.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/NSArray+UISS.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+UISS.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/NSString+UISS.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAPUISS-Swift.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/build/Debug-iphonesimulator/SAPUISS.framework/Headers/SAPUISS-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAPUISS.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/SAPUISS/SAPUISS.h"
+        },
+        {
+          'type': 'file',
+          'name': "UILabel+UISS.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UILabel+UISS.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISS+GestureRecognizers.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISS+GestureRecognizers.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISS.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISS.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSAbstractEnumValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSAbstractEnumValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSArgument.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSArgument.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSArgumentValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSArgumentValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSAxisParameter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSAxisParameter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSBarMetricsValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSBarMetricsValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSCodeGenerator.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSCodeGenerator.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSColorValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSColorValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSConfig.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSConsoleViewController.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSConsoleViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSControlStateValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSControlStateValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSDictionaryPreprocessor.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSDictionaryPreprocessor.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSDisabledKeysPreprocessor.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSDisabledKeysPreprocessor.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSEdgeInsetsValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSEdgeInsetsValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSError.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSError.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSErrorsViewController.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSErrorsViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSFloatValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSFloatValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSFontValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSFontValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSGeneratedCodeViewController.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSGeneratedCodeViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSImageResizingModeValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSImageResizingModeValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSImageValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSImageValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSIntegerValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSIntegerValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSMacros.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSOffsetValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSOffsetValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSParser.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSParserContext.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSParserContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSPointValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSPointValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSProperty.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSProperty.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSPropertySetter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSPropertySetter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSRectValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSRectValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSSearchBarIconValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSSearchBarIconValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSSegmentedControlSegmentValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSSegmentedControlSegmentValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSSettingDescriptor.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSSettingDescriptor.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSSettingsViewController.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSSettingsViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSSizeValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSSizeValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSStatusView.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSStatusView.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSStatusViewController.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSStatusViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSStatusWindow.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSStatusWindow.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSStyle.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSTextAlignmentValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSTextAlignmentValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSTextAttributesValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSTextAttributesValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSToolbarPositionValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSToolbarPositionValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSUIntegerValueConverter.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSUIntegerValueConverter.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSUserInterfaceIdiomPreprocessor.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSUserInterfaceIdiomPreprocessor.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISSVariablesPreprocessor.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSVariablesPreprocessor.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+UISS.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UIView+UISS.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/i826181/github/UISS/Project/build/Debug-iphonesimulator/SAPUISS.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/i826181/github/UISS/Project/build/UISS.build/Debug-iphonesimulator/SAPUISS.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/i826181/github/UISS/Project/build/Debug-iphonesimulator/SAPUISS.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "UISSAppearancePrivate.h",
+          'external-contents': "/Users/i826181/github/UISS/Project/UISS/UISSAppearancePrivate.h"
+        }
+      ]
+    }
+  ]
+}
